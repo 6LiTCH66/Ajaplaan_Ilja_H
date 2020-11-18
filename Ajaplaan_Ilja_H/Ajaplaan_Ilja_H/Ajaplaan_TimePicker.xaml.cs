@@ -67,63 +67,64 @@ namespace Ajaplaan_Ilja_H
         {
             if (e.PropertyName == TimePicker.TimeProperty.PropertyName)
             {
+                var time = timePicker.Time.Hours;
                 TimeSpan selctTime = timePicker.Time;
-                if(selctTime.ToString() == "01:00:00")
+                if(time == 1)
                 {
                     lbl.Text = "Python";
                     img.Source = ImageSource.FromFile("python.png");
                 }
-                else if(selctTime.ToString() == "02:00:00")
+                else if(time == 2)
                 {
                     lbl.Text = "C";
                     img.Source = ImageSource.FromFile("C.jpg");
                 }
-                else if (selctTime.ToString() == "03:00:00")
+                else if (time == 3)
                 {
                     lbl.Text = "C++";
                     img.Source = ImageSource.FromFile("Cpp.jpg");
                 }
-                else if (selctTime.ToString() == "04:00:00")
+                else if (time == 4)
                 {
                     lbl.Text = "C#";
                     img.Source = ImageSource.FromFile("Cs.jpg");
                 }
-                else if (selctTime.ToString() == "05:00:00")
+                else if (time == 5)
                 {
                     lbl.Text = "Golang";
                     img.Source = ImageSource.FromFile("Golang.png");
                 }
-                else if (selctTime.ToString() == "06:00:00")
+                else if (time == 6)
                 {
                     lbl.Text = "Java";
                     img.Source = ImageSource.FromFile("java.png");
                 }
-                else if (selctTime.ToString() == "07:00:00")
+                else if (time == 7)
                 {
                     lbl.Text = "JavaScript";
                     img.Source = ImageSource.FromFile("js.png");
                 }
-                else if (selctTime.ToString() == "08:00:00")
+                else if (time == 8)
                 {
                     lbl.Text = "PHP";
                     img.Source = ImageSource.FromFile("php.png");
                 }
-                else if (selctTime.ToString() == "09:00:00")
+                else if (time == 9)
                 {
                     lbl.Text = "Ruby";
                     img.Source = ImageSource.FromFile("rubypng.png");
                 }
-                else if (selctTime.ToString() == "10:00:00")
+                else if (time == 10)
                 {
                     lbl.Text = "Rust";
                     img.Source = ImageSource.FromFile("rust.png");
                 }
-                else if (selctTime.ToString() == "11:00:00")
+                else if (time == 11)
                 {
                     lbl.Text = "Swift";
                     img.Source = ImageSource.FromFile("swift.png");
                 }
-                else if (selctTime.ToString() == "00:00:00")
+                else if (time == 0)
                 {
                     lbl.Text = "TypeScript";
                     img.Source = ImageSource.FromFile("type.png");
